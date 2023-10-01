@@ -1,134 +1,57 @@
-/*  GLobal Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-  }
-  
-  body {
-    font-family: sans-serif;
-  }
-  
-  .d-flex {
-    display: flex;
-  }
-  
-  .btn {
-    outline: none;
-    border: none;
-    background-color: wheat;
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 1px;
-    transition: all 0.3s ease-in-out;
-  }
-  select {
-    appearance: none;
-    outline: black;
-    background-color: wheat;
-    padding: 0.5rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 2rem;
-    margin-right: 0.3rem;
-    cursor: pointer;
-    color: #0e141b;
-    border-color: black;
-  }
-  
-  .mb {
-    margin-bottom: 1rem;
-  }
-   
-  /* End GLobal Styles */
-  
-  .main-container {
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
-  }
-  
-  .clock-container {
-    padding: 2rem;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-  
-    background-color:bisque;
-  }
-  
-  .current-time {
-    font-size: 2rem;
-    color: black;
-  }
-  
-  .alarm-form {
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  .submit-button {
-    border-color: black;
-    border: 10px;
-    border-radius: 2rem;
-    font-weight: bold;
-  }
-  
-  .set-alarm-container {
-    width: 100%;
-  }
-  
-  .set-alarm-container .set-alarm-container-title {
-    color: black;
-    font-weight: bold;
-    font-size: 1rem;
-  }
-  
-  .alarm {
-    justify-content: space-between;
-    border-radius: 30px;
-    padding: 0.5rem 1rem;
-    align-items: center;
-  }
-  .alarm .delete-alarm {
-    border-radius: 2rem;
-    background-color: rgba(230, 13, 13, 0.918);
-    font-weight: bold;
-    color: wheat;
-    font-size: xx-medium;
-  }
-  
-  .time {
-    color: #0e141b;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  .btn:focus,
-  .btn:hover {
-    box-shadow: red 2px 2px 2px 1px inset, #fff -2px -2px 10px 1px inset;
-  }
-  
-  .page-title {
-    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
-    align-items: center;
-    text-align: center;
-    color: black;
-  }
-  
-  /* style of devices of screen size less than 768px */
-  @media only screen and (min-width: 600px) {
-    /* adding padding to container */
-    .main-container {
-      padding-block: 2rem;
-    }
-    .clock-container {
-      justify-content: center;
-      border-radius: 50px;
-      width: 450px;
-      min-height: auto;
-    }
-  }
+body {
+  background-color: skyblue; /* Set the background color of the body to sky blue */
+  text-align: center; /* Center-align the content within the body */
+  font-family: Arial, sans-serif; /* Set the font family for the body */
+}
+
+h1 {
+  color: #333; /* Set the color of the heading to a dark gray (#333) */
+}
+
+.stopwatch {
+  margin: 50px auto; /* Center the stopwatch container horizontally with a top margin of 50px */
+  width: 300px; /* Set the width of the stopwatch container to 300px */
+  padding: 20px; /* Add 20px of padding to the stopwatch container */
+  background-color: burlywood; /* Set the background color of the stopwatch container to burlywood */
+  border-radius: 5px; /* Add a border radius of 5px to the stopwatch container */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a box shadow effect to the stopwatch container */
+}
+
+.timer {
+  font-size: 36px; /* Set the font size of the timer to 36px */
+  font-weight: bold; /* Set the font weight of the timer to bold */
+  margin-bottom: 20px; /* Add a bottom margin of 20px to the timer */
+  color: #fff; /* Set the color of the timer to white */
+}
+
+.btn-container {
+  display: flex; /* Use flexbox to display the buttons in a row */
+  justify-content: space-around; /* Distribute the space evenly between the buttons */
+  gap: 10px; /* Add a gap of 10 pixels between buttons */
+}
+
+#start {
+  background-color: #4CAF50; /* Set the background color of the Start button to green */
+}
+
+#stop {
+  background-color: #FF0000; /* Set the background color of the Stop button to red */
+}
+
+#reset {
+  background-color: #FFC107; /* Set the background color of the Reset button to yellow */
+}
+
+.btn {
+  display: block; /* Display the buttons as block elements */
+  padding: 8px 20px; /* Add padding of 8px on the top and bottom, and 20px on the left and right */
+  font-size: 16px; /* Set the font size of the buttons to 16px */
+  border: none; /* Remove the border from the buttons */
+  border-radius: 3px; /* Add a border radius of 3px to the buttons */
+  color: #fff; /* Set the color of the buttons to white */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+.btn:hover {
+  opacity: 0.8; /* Reduce opacity on hover effect */
+}

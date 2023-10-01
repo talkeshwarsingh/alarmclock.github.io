@@ -1,2 +1,2 @@
-# alarmclock.github.io
-alarmclock logic based on html ,css and jss
+# Stopwatch.github.io
+Stopwatch logic based on html ,css and jss
