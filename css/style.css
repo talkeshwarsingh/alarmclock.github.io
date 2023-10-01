@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container h1 {
+    color: white;
+    margin: 10px 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 5rem;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.733);
+    text-shadow: 5px 5px 0 #ffffff, 1px 2px 0 #fffafa, 1px 3px 0 #ffffff, 1px 4px 0 #f5f4f4,
+    1px 5px 0 #fbf9f9, 15px 13px 15px black;
+}
+#stopwatch{
+    font-size: 100px;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#buttons{
+    display: flex;
+}
+button{
+    padding: 20px;
+    background-color: #694343;
+    border:none;
+    border-radius: 10px;
+    color: white;
+    font-size: larger;
+    margin: 10px;
+    width:100px;
+    box-shadow: 5px 5px 1px rgba(56, 51, 51, 0.5);
+    transition: all 0.5s;
+}
+button:hover{
+    cursor:pointer;
+}
+button:active{
+    box-shadow: none;
+    transition: all 0.5;
+}
